@@ -10,6 +10,10 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "override_jis_symbols.h"
 
+#define MOUSE 4
+#define SCROLL 1
+#define NUM 6
+
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <150>;
@@ -27,7 +31,7 @@
         compatible = "zmk,combos";
 
         scroll {
-            bindings = <&mo 5>;
+            bindings = <&mo SCROLL>;
             key-positions = <17 16>;
             timeout-ms = <50>;
         };
